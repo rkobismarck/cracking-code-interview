@@ -12,23 +12,21 @@ const unique = (argument) => {
     // Basic input verification.
     if (argument === undefined) {
       return false
-		}
+    }
     if (argument.length > 1) {
       // Conversion to iterable object.
       let elementCollection = argument.split('')
-			let mapUniqueness = {}
-			for (let index = 0; index < elementCollection.length; index++) {
+      let mapUniqueness = {}
+      for (let index = 0; index < elementCollection.length; index++) {
         let elementAtIndex = elementCollection[index]
         if (mapUniqueness[elementAtIndex] !== undefined) {
           return false
-				}
+        }
         mapUniqueness[elementAtIndex] = true
-			}
+      }
     }
-
     return true
   }
-
   return { isUnique }
 }
 module.exports = unique()
