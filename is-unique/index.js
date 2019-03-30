@@ -13,6 +13,9 @@ const unique = (argument) => {
     if (argument === undefined) {
       return false
     }
+    if (argument.length > 128) {
+      return false // ASCII max number of elements.
+    }
     if (argument.length > 1) {
       // Conversion to iterable object.
       let elementCollection = argument.split('')
