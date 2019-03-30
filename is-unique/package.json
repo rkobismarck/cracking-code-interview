@@ -1,0 +1,27 @@
+{
+  "name": "is-unique",
+  "version": "1.0.0",
+  "description": "Sample isUnique implementation for CrackigTheCodeInterview exercises.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkobismarck/cracking-code-interview.git"
+  },
+  "keywords": [
+    "js",
+    "nodejs",
+    "mocha"
+  ],
+  "author": "RCTT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkobismarck/cracking-code-interview/issues"
+  },
+  "homepage": "https://github.com/rkobismarck/cracking-code-interview#readme",
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  }
+}
