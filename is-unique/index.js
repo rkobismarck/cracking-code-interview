@@ -10,12 +10,15 @@
 const unique = (argument) => {
   const isUnique = (argument) => {
     // Basic input verification.
+    // O(1)
     if (argument === undefined) {
       return false
     }
+    // O(1)
     if (argument.length > 128) {
       return false // ASCII max number of elements.
     }
+    // O(n)
     if (argument.length > 1) {
       // Conversion to iterable object.
       let elementCollection = argument.split('')
@@ -28,6 +31,9 @@ const unique = (argument) => {
         mapUniqueness[elementAtIndex] = true
       }
     }
+    // T = O(1) + O (1) + O (n)
+    // T = c1 + c2 + ()
+    // Fastet growing therm -> O(n) (Linear time.)
     return true
   }
   return { isUnique }
