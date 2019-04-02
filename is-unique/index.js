@@ -32,7 +32,7 @@ const unique = (argument) => {
       }
     }
     // T = O(1) + O (1) + O (n)
-    // T = c1 + c2 + ()
+    // T = c1 + c2 + (n)
     // Fastet growing therm -> O(n) (Linear time.)
     return true
   }
